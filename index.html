@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Popcorn</title>
+        <meta name="viewport" content="width=device-width,intitial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+        <style>
+            #main {
+                text-align: center;
+            }
+
+            #popcornBtn {
+                border-radius: 4px;
+                border: none;
+                outline: none;
+            }
+
+            .card .btn-close {
+                float: right;
+                display: none;
+            }
+
+            .card:hover .btn-close {
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section id="main" class="container" role="content">
+            <p>
+                Instructions: Enter each name of the person in the group to the name bank and press the popcorn button to pick a random person to popcorn to.
+            </p>
+
+            <h4>Popcorn:</h4>
+            <div class="p-5 mb-4 bg-light rounded-3" id="popcornName">
+                Please add some names.   
+            </div>
+
+            <div style="margin-bottom: 1em;">
+                <div id="nameBank" class="row row-cols-1 row-cols-md-2 g-4"></div>
+            </div>
+
+                <div class="input-group mb-3">
+                    <input id="nameInput" type="text" class="form-control" placeholder="Enter name">
+                    <button id="addNameBtn" class="btn btn-outline-secondary" type="button">Add</button>
+                </div>
+            </div>
+
+            <button id="popcornBtn">
+                <img id="popcornImg" src="img/kernel.png" height="200px" width="200px">
+            </button>
+        </section>
+
+        <script src="js/app.js"></script>
+    </body>
+</head>
